@@ -4,11 +4,14 @@
 
 body {
   margin: 0;
-  background-color: rgb(255, 255, 255);
-  color: aliceblue;
+  font-family: Poppins, sans-serif;
 }
 
 nav {
+  top: 0;
+  position: sticky;
+  z-index: 1;
+  opacity: 0.8;
   display: flex;
   height: 5em;
   background-color: bisque;
@@ -17,10 +20,17 @@ nav {
   box-shadow: 0px 2.9px 7.5px rgba(0, 0, 0, 0.1);
 }
 
+.grey {
+  color: grey;
+}
+
+.bold {
+  font-weight: bold;
+}
+
 .hero--wrapper {
   display: grid;
-  height: 500px;
-  background-color: aqua;
+  height: auto;
   grid-template-columns: 3em auto 3em;
 }
 
@@ -28,22 +38,95 @@ nav {
   display: grid;
   grid-column-start: 2;
   grid-template-columns: repeat(5, 1fr);
-  background-color: beige;
-  column-gap: 10px;
+  /*   column-gap: 10px; */
+  justify-content: space-between;
+  /*   align-content: space-around; */
   column-rule-color: aliceblue;
-  row-gap: 10px white;
   height: auto;
+  padding-top: 1.5em;
+  column-gap: 1em;
+  grid-column-end: 3;
 }
 
 .hero--column {
+  margin-top: 1em;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: rgb(87, 111, 133);
 }
 
-.hero--column > img {
+.hero--tile {
+  margin-bottom: 1em;
+  overflow: hidden;
+  border-radius: 1em;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+  filter: opacity(0.9) saturate(0.6);
+  height: auto;
+}
+
+.hero--tile > img {
   width: 100%;
-  padding-top: 1em;
-  border-radius: 2em;
+  scale: 1.2;
+  transition: transform 0.8s 0.1s ease-in;
+}
+
+.hero--tile > img:hover {
+  transform: scale(1.5);
+}
+
+.hero--text {
+  font-weight: 700;
+  grid-column-start: 2;
+  width: 60vh;
+  line-height: 1.7em;
+  margin-top: 2em;
+}
+
+.hero--text h1 {
+  margin-bottom: 0em;
+  padding-bottom: 0em;
+}
+
+.hero--text p {
+  line-height: 1.3em;
+  font-weight: 400;
+}
+
+.card--wrapper {
+  display: grid;
+  height: 400px;
+  grid-template-columns: 3em auto 3em;
+}
+
+.card--stats {
+  margin-top: 0.3em;
+  margin-left: 0.3em;
+}
+
+.card--container {
+  display: inline-flex;
+  background-color: antiquewhite;
+  grid-column-start: 2;
+}
+
+.card {
+  display: block;
+  font-size: 12px;
+  width: 175px;
+}
+
+.card p {
+  margin: 0.3em;
+  margin-left: 0.5em;
+}
+
+.card img {
+  width: 100%;
+  margin-top: 1em;
+  border-radius: 9px;
+}
+
+.card--stats > #star {
+  padding-right: 0.2em;
+  color: red;
 }
