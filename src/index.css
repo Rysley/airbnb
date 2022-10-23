@@ -20,6 +20,10 @@ nav {
   box-shadow: 0px 2.9px 7.5px rgba(0, 0, 0, 0.1);
 }
 
+.nav--greeter {
+  margin: auto;
+}
+
 .grey {
   color: grey;
 }
