@@ -1,16 +1,23 @@
 import React from "react";
 
-//import Photo from "../assets/img/card_face_2.png";
+export default function Card(props = props.card) {
+  //props = props.card;
+  let badgeText;
+  if (props.openSpots === 0) {
+    badgeText = "SOLD OUT";
+  } else if (props.location === "online") {
+    badgeText = "ONLINE";
+  }
 
-export default function Card(props) {
   return (
     <div className="card">
+      {badgeText && <div className="card--badge">{badgeText}</div>}
       <img src={require(`../assets/img/${props.img}`).default} alt="portrait" />
       <div className="card--stats">
         <span id="star">&#128970;</span>
         <span>{props.rating}</span>
         <span className="grey">({props.reviewCount}) &#8226; </span>
-        <span className="grey">{props.country}</span>
+        <span className="grey">{props.location}</span>
       </div>
       <p>{props.title}</p>
       <p>
@@ -19,5 +26,3 @@ export default function Card(props) {
     </div>
   );
 }
-
-//      <img src={`../assets/img/${props.img}`} alt="portrait" />

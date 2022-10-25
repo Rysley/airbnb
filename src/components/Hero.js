@@ -3,7 +3,7 @@ import door from "../assets/img/door.jpg";
 import door2 from "../assets/img/door2.jpg";
 import map from "../assets/img/map.jpg";
 import zen from "../assets/img/zen.jpg";
-import pool from "../assets/img/pool.jpg";
+import art from "../assets/img/art.jpg";
 import road from "../assets/img/road.jpg";
 import lane from "../assets/img/lane.jpg";
 import hut from "../assets/img/hut.jpg";
@@ -22,7 +22,7 @@ export default function Hero() {
             <img src={door} alt="door" />
           </div>
           <div className="hero--tile">
-            <img src={pool} alt="pool" />
+            <img src={art} alt="art" />
           </div>
         </div>
         <div className="hero--column">

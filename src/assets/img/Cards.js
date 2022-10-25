@@ -1,0 +1,66 @@
+//import React from "react";
+
+const Cards = [
+  {
+    id: 1,
+    img: "card_face_1.png",
+    rating: "5.0",
+    reviewCount: 6,
+    location: "USA",
+    title: "Life lessons with Katie Zaferes",
+    price: 136,
+    openSpots: 0,
+  },
+  {
+    id: 2,
+    img: "card_face_2.png",
+    rating: "4.8",
+    reviewCount: 12,
+    location: "online",
+    title: "What bothers Gilbert Grape",
+    price: 250,
+    openSpots: 4,
+  },
+  {
+    id: 3,
+    img: "card_face_3.png",
+    rating: "4.9",
+    reviewCount: 99,
+    location: "Sweden",
+    title: "Jane Goodall among the Gorillas",
+    price: 75,
+    openSpots: 2,
+  },
+  {
+    id: 4,
+    img: "card_face_1.png",
+    rating: "5.0",
+    reviewCount: 6,
+    location: "USA",
+    title: "Life lessons with Katie Zaferes",
+    price: 136,
+    openSpots: 0,
+  },
+  {
+    id: 5,
+    img: "card_face_2.png",
+    rating: "4.8",
+    reviewCount: 12,
+    location: "Belgium",
+    title: "What bothers Gilbert Grape",
+    price: 250,
+    openSpots: 12,
+  },
+  {
+    id: 6,
+    img: "card_face_3.png",
+    rating: "4.9",
+    reviewCount: 99,
+    location: "online",
+    title: "Jane Goodall among the Gorillas",
+    price: 75,
+    openSpots: 1,
+  },
+];
+
+export default Cards;
