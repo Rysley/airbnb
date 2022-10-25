@@ -1,8 +1,8 @@
 import React from "react";
-import Slider from "./components/Slider";
-import Hero from "./components/Hero";
-import HeroTitle from "./components/HeroTitle";
-import Navbar from "./components/Navbar";
+import Slider from "./Slider";
+import Hero from "./Hero";
+import HeroTitle from "./HeroTitle";
+import Navbar from "./Navbar";
 
 export default function App() {
   return (
