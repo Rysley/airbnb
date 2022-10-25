@@ -6,13 +6,14 @@ export default function Slider() {
     <div className="card--wrapper">
       <div className="card--container">
         <Card
+          img="card_face_1.png"
           rating="5.0"
           reviewCount={6}
           country="USA"
           title="Life lessons with Katie Zaferes"
           price={136}
         />
-        {/* <Card
+        <Card
           img="card_face_2.png"
           rating="4.8"
           reviewCount={12}
@@ -51,7 +52,7 @@ export default function Slider() {
           country="Sweden"
           title="Jane Goodall among the Gorillas"
           price={75}
-        /> */}
+        />
       </div>
     </div>
   );
